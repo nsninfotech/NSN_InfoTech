@@ -211,36 +211,45 @@ End Fixed Navigation
  			<!-- / End Contact Details -->
 
  			<!-- Contact Form -->
- 			<div class="contact-form col-md-6">
-  <form action="https://formsubmit.co/xyzpseudo001@gmail.com" method="POST" id="contact-form" role="form">
-    
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="thankyou.html">
+ 		<div class="contact-form col-md-6">
+      <form id="contact-form" action="https://formsubmit.co/xyzincognito001@gmail.com" method="POST">
+        
+        <!-- Hidden Inputs -->
+        <input type="hidden" name="_subject" value="NSN_InfoTech">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://nsninfotech.github.io/NSN_InfoTech/thankyou.html">
 
-    <div class="form-group mb-4">
-      <input type="text" placeholder="Your Name" class="form-control" name="name" id="name" required>
+        <!-- Name Field -->
+        <div class="form-group mb-4">
+          <label for="name" class="visually-hidden">Name</label>
+          <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required>
+        </div>
+
+        <!-- Email Field -->
+        <div class="form-group mb-4">
+          <label for="email" class="visually-hidden">Email</label>
+          <input type="email" id="email" name="email" class="form-control" placeholder="Your Email" required>
+        </div>
+
+        <!-- Subject Field -->
+        <div class="form-group mb-4">
+          <label for="subject" class="visually-hidden">Subject</label>
+          <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject" required>
+        </div>
+
+        <!-- Message Field -->
+        <div class="form-group mb-4">
+          <label for="message" class="visually-hidden">Message</label>
+          <textarea id="message" name="message" class="form-control" rows="6" placeholder="Message" required></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div id="cf-submit">
+          <button type="submit" id="contact-submit" class="btn btn-transparent">Submit</button>
+        </div>
+      </form>
     </div>
 
-    <div class="form-group mb-4">
-      <input type="email" placeholder="Your Email" class="form-control" name="email" id="email" required>
-    </div>
-
-    <div class="form-group mb-4">
-      <input type="text" placeholder="Subject" class="form-control" name="subject" id="subject" required>
-    </div>
-
-    <div class="form-group mb-4">
-      <textarea rows="6" placeholder="Message" class="form-control" name="message" id="message" required></textarea>
-    </div>
-
-    <div id="cf-submit">
-      <!-- Option A: Use input (update JS accordingly) -->
-      <input type="submit" id="contact-submit" class="btn btn-transparent" value="Submit">
-
-      <!-- Option B: OR replace with button (if you want innerText instead of value) -->
-      <!-- <button type="submit" class="btn btn-transparent" id="contact-submit">Submit</button> -->
-    </div>
-  </form>
 
   <script>
     document.getElementById("contact-form").addEventListener("submit", function (e) {
@@ -340,7 +349,6 @@ End Fixed Navigation
   </div>
   <div class="footer-bottom">
     <h5>&copy; Copyright 2025. All rights reserved.</h5>
-    <!-- <h6>Design and Developed by <a href="https://themefisher.com/">Themefisher</a></h6> -->
   </div>
 </footer> <!-- end footer -->
 
