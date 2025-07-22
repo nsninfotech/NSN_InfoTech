@@ -33,6 +33,8 @@
   <link rel="stylesheet" href="plugins/slick/slick.css">
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 
 </head>
 <body id="body">
@@ -159,9 +161,9 @@ End Fixed Navigation
 					}
 				</style>
 				<div class="col-md-12 text-center">
-					<h1 data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".1" style="font-size: 80px;margin-bottom: 10px;">NSN<br>INFOTECH</h1>
-					<h4 data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".1">PRIVATE LIMITED</h4>
-					<p data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".5">We offer a wide range of innovative services to meet Clients diverse business needs.</p>
+					<img src="./images/title1.png" alt="Logo"><img src="./images/title22.png" alt="Logo">	
+					
+					<p style="padding: 20px;" data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".5">We offer a wide range of innovative services to meet Clients diverse business needs.</p>
 					<a data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".8" class="btn btn-main"
 						href="service.html">Explore Us</a>
 				</div>
@@ -437,7 +439,7 @@ Start Counter Section
 			<div class="col-xl-6 col-lg-8 text-center">
 				<div class="title">
 					<h2>Award-Winning Agency</h2>
-					<p>Vestibulum nisl tortor, consectetur quis imperdiet bibendum, laoreet sed arcu. Sed condimentum iaculis ex, in faucibus lorem accumsan non. Donec mattis tincidunt metus. Morbi sed tortor a risus luctus dignissim.</p>
+					<p>At NSN INFOTECH, we blend innovation and precision to craft impactful digital solutions. With a commitment to quality and client success, we’ve earned recognition as a trusted technology partner. Our work speaks through results, not just promises—driving business growth, user engagement, and operational excellence.</p>
 				</div>
 			</div>
 		</div>
@@ -508,7 +510,7 @@ Start Counter Section
 							<i class="tf-ion-chatbubbles"></i>
 							<!-- client info -->
 							<div class="client-details">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nulla, soluta dolorum. Eos earum, magni asperiores, unde corporis labore, enim, voluptatum officiis voluptates alias natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, officia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quia?</p>
+								<p>"NSN INFOTECH turned our vision into a functional, beautifully designed website. Their communication was clear, and the turnaround time was impressive. Highly recommended!”	</p>
 							</div>
 							<!-- /client info -->
 							<!-- client photo -->
@@ -528,7 +530,7 @@ Start Counter Section
 							<i class="tf-ion-chatbubbles"></i>
 							<!-- client info -->
 							<div class="client-details">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nulla, soluta dolorum. Eos earum, magni asperiores, unde corporis labore, enim, voluptatum officiis voluptates alias natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, officia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quia?</p>
+								<p>“Their mobile app development team delivered a sleek, fast, and user-friendly app for our business. We saw an increase in customer engagement within weeks.”</p>
 							</div>
 							<!-- /client info -->
 							<!-- client photo -->
@@ -548,7 +550,7 @@ Start Counter Section
 							<i class="tf-ion-chatbubbles"></i>
 							<!-- client info -->
 							<div class="client-details">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nulla, soluta dolorum. Eos earum, magni asperiores, unde corporis labore, enim, voluptatum officiis voluptates alias natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, officia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quia?</p>
+								<p>We partnered with NSN INFOTECH for a cloud migration project. The team handled it flawlessly and ensured zero downtime. Truly professional and dependable.</p>
 							</div>
 							<!-- /client info -->
 							<!-- client photo -->
@@ -577,126 +579,142 @@ Start Blog Section
 			<!-- section title -->
 			<div class="col-xl-6 col-lg-8">
 				<div class="title text-center ">
-					<h2> Latest <span class="color">Posts</span></h2>
+					<h2> Latest <span class="color">Works</span></h2>
 					<div class="border"></div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus facere accusamus, reprehenderit libero inventore nam.</p>
+					<p>Explore our latest projects that blend innovation, design, and technology to solve real-world challenges. From web platforms to AI-powered apps, we deliver impactful digital solutions.</p>
 				</div>
 			</div>
 			<!-- /section title -->
 		</div>
 
+		<style>
+			.post-item {
+				transition: transform 0.1s ease, box-shadow 0.3s ease;
+			}
+
+			.post-item:hover {
+				transform: translateY(-8px);
+				box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+			}
+
+			.media-wrapper img {
+				transition: transform 0.3s ease;
+			}
+
+			.post-item:hover .media-wrapper img {
+				transform: scale(1.05);
+			}
+		</style>
+		
 		<div class="row">
-			<!-- single blog post -->
-			<article class="col-lg-4 col-md-6">
-				<div class="post-item">
-					<div class="media-wrapper">
-						<img loading="lazy" src="images/blog/post-1.jpg" alt="amazing caves coverimage" class="img-fluid">
-					</div>
+		<!-- SmartShop Project -->
+		<article class="col-lg-4 col-md-6">
+			<div class="post-item">
+			<div class="media-wrapper">
+				<img loading="lazy" src="images/blog/post-1.jpg" alt="SmartShop Project" class="img-fluid">
+			</div>
+			<div class="content">
+				<h3><a href="#">SmartShop – E-Commerce Website</a></h3>
+				<p>A fully responsive e-commerce platform with real-time inventory, user accounts, and secure payment integration built using the MERN stack.</p>
+				<a class="btn btn-main" href="#">Read more</a>
+			</div>
+			</div>
+		</article>
 
-					<div class="content">
-						<h3><a href="single-post.html">Reasons to Smile</a></h3>
-						<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
-							moon officia aute, non skateboard dolor brunch.</p>
-						<a class="btn btn-main" href="single-post.html">Read more</a>
-					</div>
-				</div>
-			</article>
-			<!-- /single blog post -->
+		<!-- EduTrack Project -->
+		<article class="col-lg-4 col-md-6">
+			<div class="post-item">
+			<div class="media-wrapper">
+				<img loading="lazy" src="images/blog/post-2.jpg" alt="EduTrack Project" class="img-fluid">
+			</div>
+			<div class="content">
+				<h3><a href="#">EduTrack – Learning Management System</a></h3>
+				<p>A web and mobile-based app for managing courses, online assessments, and student performance analytics using React Native and Firebase.</p>
+				<a class="btn btn-main" href="#">Read more</a>
+			</div>
+			</div>
+		</article>
 
-			<!-- single blog post -->
-			<article class="col-lg-4 col-md-6">
-				<div class="post-item">
-					<div class="media-wrapper">
-						<img loading="lazy" src="images/blog/post-2.jpg" alt="amazing caves coverimage" class="img-fluid">
-					</div>
-
-					<div class="content">
-						<h3><a href="single-post.html">A Few Moments</a></h3>
-						<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
-							moon officia aute, non skateboard dolor brunch.</p>
-						<a class="btn btn-main" href="single-post.html">Read more</a>
-					</div>
-				</div>
-			</article>
-			<!-- end single blog post -->
-
-			<!-- single blog post -->
-			<article class="col-lg-4 col-md-6">
-				<div class="post-item">
-					<div class="media-wrapper">
-						<img loading="lazy" src="images/blog/post-3.jpg" alt="amazing caves coverimage" class="img-fluid">
-					</div>
-
-					<div class="content">
-						<h3><a href="single-post.html">Hints for Life</a></h3>
-						<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
-							moon officia aute, non skateboard dolor brunch.</p>
-						<a class="btn btn-main" href="single-post.html">Read more</a>
-					</div>
-				</div>
-			</article>
-			<!-- end single blog post -->
+		<!-- MedConnect Project -->
+		<article class="col-lg-4 col-md-6">
+			<div class="post-item">
+			<div class="media-wrapper">
+				<img loading="lazy" src="images/blog/post-3.jpg" alt="MedConnect Project" class="img-fluid">
+			</div>
+			<div class="content">
+				<h3><a href="#">MedConnect – Telehealth App</a></h3>
+				<p>A HIPAA-compliant mobile app connecting doctors and patients with features like appointment booking, video calls, and e-prescriptions.</p>
+				<a class="btn btn-main" href="#">Read more</a>
+			</div>
+			</div>
+		</article>
 		</div> <!-- end row -->
 	</div> <!-- end container -->
 </section> <!-- end section -->
 
+<!-- ========================== -->
+
+<!-- ========================== -->
 <footer id="footer" class="bg-one">
   <div class="top-footer">
     <div class="container">
       <div class="row justify-content-around">
-        <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
-          <h3>about</h3>
-          <p>Integer posuere erat a ante venenati dapibus posuere velit aliquet. Fusce dapibus, tellus cursus commodo, tortor mauris sed posuere.</p>
-        </div>
-        <!-- End of .col-sm-3 -->
 
-        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+        <!-- Logo + About -->
+        <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+          <img style="width: 200px; height: auto;" src="images/logo.png" alt="NSN Logo" class="footer-logo mb-3">
+          <p>
+            NSN InfoTech is a tech-driven company offering solutions in web/mobile app development, cybersecurity, cloud, AI, and digital growth strategies.
+          </p>
+		  <a href="#" class="btn-back-to-top mt-3">
+			<i class="fas fa-arrow-up"></i> Back to Top
+		  </a>
+        </div>
+
+        <!-- Our Services -->
+        <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
           <ul>
-            <li>
-              <h3>Our Services</h3>
-            </li>
-            <li><a href="service.html">Ui/Ux Design</a></li>
-            <li><a href="service.html">Graphic Design</a></li>
-            <li><a href="service.html">Web Design</a></li>
+            <li><h3>Our Services</h3></li>
             <li><a href="service.html">Web Development</a></li>
+            <li><a href="service.html">Mobile App Development</a></li>
+            <li><a href="service.html">Cloud & Cybersecurity</a></li>
+            <li><a href="service.html">AI & Data Science</a></li>
           </ul>
         </div>
-        <!-- End of .col-sm-3 -->
 
+        <!-- Quick Links -->
         <div class="col-lg-2 col-md-6 mb-5 mb-md-0">
           <ul>
-            <li>
-              <h3>Quick Links</h3>
-            </li>
+            <li><h3>Quick Links</h3></li>
             <li><a href="about.html">About</a></li>
             <li><a href="service.html">Services</a></li>
-            <li><a href="blog.html">Blogs</a></li>
-            <li><a href="404.html">404</a></li>
+            <li><a href="portfolio.html">Collaboration</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
-        <!-- End of .col-sm-3 -->
 
+        <!-- Contact + Follow Us -->
         <div class="col-lg-3 col-md-6">
-          <ul>
-            <li>
-              <h3>Connect with us Socially</h3>
-            </li>
-            <li><a href="https://www.facebook.com/themefisher/">Linkedin</a></li>
-            <li><a href="https://www.twitter.com/themefisher/">Twitter</a></li>
-            <li><a href="https://www.youtube.com/channel/UCx9qVW8VF0LmTi4OF2F8YdA">Youtube</a></li>
-            <li><a href="https://www.github.com/themefisher/">Github</a></li>
-          </ul>
+          <h3>Contact Us</h3>
+          <p><i class="fas fa-envelope"></i> &nbsp;<a href="mailto:info@nsninfotech.com">hr@nsninfo.in</a></p>
+          <p><i class="fas fa-phone"></i> &nbsp;<a href="tel:+911234567890">+91 94941 82211</a></p>
+          <br>
+		  <h3>Follow Us:
+			<a href="https://www.linkedin.com/company/nsn-infotech-solutions-pvt-ltd/" target="_blank">
+              <i class="fab fa-linkedin fa-lg"></i>
+            </a>
+		  </h3>
+
         </div>
-        <!-- End of .col-sm-3 -->
 
       </div>
-    </div> <!-- end container -->
+    </div>
   </div>
-  <div class="footer-bottom">
-    <h5>&copy; Copyright 2025. All rights reserved.</h5>
-    <!-- <h6>Design and Developed by <a href="https://themefisher.com/">Themefisher</a></h6> -->
+
+  <div class="footer-bottom text-center pt-3">
+    <h5 style="color: #888;">&copy; Copyright 2025. All rights reserved.</h5>
   </div>
-</footer> <!-- end footer -->
+</footer>
 
 
 <!-- end Footer Area

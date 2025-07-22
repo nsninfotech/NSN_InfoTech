@@ -34,6 +34,7 @@
   <link rel="stylesheet" href="plugins/slick/slick.css">
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 </head>
 <body id="body">
@@ -211,36 +212,46 @@ End Fixed Navigation
  			<!-- / End Contact Details -->
 
  			<!-- Contact Form -->
- 			<div class="contact-form col-md-6">
-  <form action="https://formsubmit.co/xyzpseudo001@gmail.com" method="POST" id="contact-form" role="form">
-    
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="thankyou.html">
+ 		<div class="contact-form col-md-6">
+      <form id="contact-form" action="https://formsubmit.co/xyzincognito001@gmail.com" method="POST">
+        
+        <!-- Hidden Inputs -->
+        <input type="hidden" name="_subject" value="NSN_InfoTech">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://nsninfotech.github.io/NSN_InfoTech/thankyou.html">
 
-    <div class="form-group mb-4">
-      <input type="text" placeholder="Your Name" class="form-control" name="name" id="name" required>
+        <!-- Name Field -->
+        <div class="form-group mb-4">
+          <label for="name" class="visually-hidden">Name</label>
+          <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required>
+        </div>
+
+        <!-- Email Field -->
+        <div class="form-group mb-4">
+          <label for="email" class="visually-hidden">Email</label>
+          <input type="email" id="email" name="email" class="form-control" placeholder="Your Email" required>
+        </div>
+
+        <!-- Subject Field -->
+        <div class="form-group mb-4">
+          <label for="subject" class="visually-hidden">Subject</label>
+          <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject" required>
+        </div>
+
+        <!-- Message Field -->
+        <div class="form-group mb-4">
+          <label for="message" class="visually-hidden">Message</label>
+          <textarea id="message" name="message" class="form-control" rows="6" placeholder="Message" required></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div id="cf-submit">
+          <button type="submit" id="contact-submit" class="btn btn-transparent">Submit</button>
+        </div>
+      </form>
     </div>
 
-    <div class="form-group mb-4">
-      <input type="email" placeholder="Your Email" class="form-control" name="email" id="email" required>
-    </div>
-
-    <div class="form-group mb-4">
-      <input type="text" placeholder="Subject" class="form-control" name="subject" id="subject" required>
-    </div>
-
-    <div class="form-group mb-4">
-      <textarea rows="6" placeholder="Message" class="form-control" name="message" id="message" required></textarea>
-    </div>
-
-    <div id="cf-submit">
-      <!-- Option A: Use input (update JS accordingly) -->
-      <input type="submit" id="contact-submit" class="btn btn-transparent" value="Submit">
-
-      <!-- Option B: OR replace with button (if you want innerText instead of value) -->
-      <!-- <button type="submit" class="btn btn-transparent" id="contact-submit">Submit</button> -->
-    </div>
-  </form>
 
   <script>
     document.getElementById("contact-form").addEventListener("submit", function (e) {
@@ -290,59 +301,62 @@ End Fixed Navigation
   <div class="top-footer">
     <div class="container">
       <div class="row justify-content-around">
-        <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
-          <h3>about</h3>
-          <p>Integer posuere erat a ante venenati dapibus posuere velit aliquet. Fusce dapibus, tellus cursus commodo, tortor mauris sed posuere.</p>
-        </div>
-        <!-- End of .col-sm-3 -->
 
-        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+        <!-- Logo + About -->
+        <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+          <img style="width: 200px; height: auto;" src="images/logo.png" alt="NSN Logo" class="footer-logo mb-3">
+          <p>
+            NSN InfoTech is a tech-driven company offering solutions in web/mobile app development, cybersecurity, cloud, AI, and digital growth strategies.
+          </p>
+		  <a href="#" class="btn-back-to-top mt-3">
+			<i class="fas fa-arrow-up"></i> Back to Top
+		  </a>
+        </div>
+
+        <!-- Our Services -->
+        <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
           <ul>
-            <li>
-              <h3>Our Services</h3>
-            </li>
-            <li><a href="service.html">Ui/Ux Design</a></li>
-            <li><a href="service.html">Graphic Design</a></li>
-            <li><a href="service.html">Web Design</a></li>
+            <li><h3>Our Services</h3></li>
             <li><a href="service.html">Web Development</a></li>
+            <li><a href="service.html">Mobile App Development</a></li>
+            <li><a href="service.html">Cloud & Cybersecurity</a></li>
+            <li><a href="service.html">AI & Data Science</a></li>
           </ul>
         </div>
-        <!-- End of .col-sm-3 -->
 
+        <!-- Quick Links -->
         <div class="col-lg-2 col-md-6 mb-5 mb-md-0">
           <ul>
-            <li>
-              <h3>Quick Links</h3>
-            </li>
+            <li><h3>Quick Links</h3></li>
             <li><a href="about.html">About</a></li>
             <li><a href="service.html">Services</a></li>
-            <li><a href="blog.html">Blogs</a></li>
-            <li><a href="404.html">404</a></li>
+            <li><a href="portfolio.html">Collaboration</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
-        <!-- End of .col-sm-3 -->
 
+        <!-- Contact + Follow Us -->
         <div class="col-lg-3 col-md-6">
-          <ul>
-            <li>
-              <h3>Connect with us Socially</h3>
-            </li>
-            <li><a href="https://www.facebook.com/">Facebook</a></li>
-            <li><a href="https://www.twitter.com/">Twitter</a></li>
-            <li><a href="https://www.youtube.com/">Youtube</a></li>
-            <li><a href="https://www.github.com/">Github</a></li>
-          </ul>
+          <h3>Contact Us</h3>
+          <p><i class="fas fa-envelope"></i> &nbsp;<a href="mailto:info@nsninfotech.com">hr@nsninfotech.com</a></p>
+          <p><i class="fas fa-phone"></i> &nbsp;<a href="tel:+911234567890">+91 12345 67890</a></p>
+          <br>
+		  <h3>Follow Us:
+			<a href="https://linkedin.com/company/nsninfotech" target="_blank">
+              <i class="fab fa-linkedin fa-lg"></i>
+            </a>
+		  </h3>
+
         </div>
-        <!-- End of .col-sm-3 -->
 
       </div>
-    </div> <!-- end container -->
+    </div>
   </div>
-  <div class="footer-bottom">
-    <h5>&copy; Copyright 2025. All rights reserved.</h5>
-    <!-- <h6>Design and Developed by <a href="https://themefisher.com/">Themefisher</a></h6> -->
+
+  <div class="footer-bottom text-center pt-3">
+    <h5 style="color: #888;">&copy; Copyright 2025. All rights reserved.</h5>
   </div>
-</footer> <!-- end footer -->
+</footer>
 
 
 <!-- end Footer Area
