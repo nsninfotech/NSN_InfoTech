@@ -4,6 +4,42 @@
  * FACEBOOK: https://www.facebook.com/themefisher
  * GITHUB: https://github.com/themefisher/
  */
+  document.addEventListener("DOMContentLoaded", function () {
+    const currentPage = window.location.pathname.split("/").pop();
+    const navItems = document.querySelectorAll(".navbar-nav .nav-item");
+
+    navItems.forEach(item => {
+      const link = item.querySelector(".nav-link");
+      if (link && link.getAttribute("href") === currentPage) {
+        item.classList.add("active");
+      }
+    });
+  });
+  document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll(".portfolio-filter button");
+    const items = document.querySelectorAll(".filtr-item");
+
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => {
+        buttons.forEach((btn) => btn.classList.remove("active"));
+        button.classList.add("active");
+
+        const filterValue = button.getAttribute("data-filter");
+
+        items.forEach((item) => {
+          const categories = item.getAttribute("data-category").split(",").map(c => c.trim());
+
+          const match = filterValue === "all" || categories.includes(filterValue);
+
+          if (match) {
+            item.classList.remove("hidden");
+          } else {
+            item.classList.add("hidden");
+          }
+        });
+      });
+    });
+  });
 
 (function ($) {
   'use strict';
@@ -19,14 +55,15 @@
 
 
   // navbarDropdown
-	if ($(window).width() < 992) {
-		$('#navigation .dropdown-toggle').on('click', function () {
-			$(this).siblings('.dropdown-menu').animate({
-				height: 'toggle'
-			}, 300);
-		});
-  }
+	// if ($(window).width() < 992) {
+	// 	$('#navigation .dropdown-toggle').on('click', function () {
+	// 		$(this).siblings('.dropdown-menu').animate({
+	// 			height: 'toggle'
+	// 		}, 300);
+	// 	});
+  // }
   
+
   //Hero Slider
   $('.hero-slider').slick({
     autoplay: true,

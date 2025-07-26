@@ -1,12 +1,5 @@
 <!DOCTYPE html>
 
-<!--
- // WEBSITE: https://themefisher.com
- // TWITTER: https://twitter.com/themefisher
- // FACEBOOK: https://www.facebook.com/themefisher
- // GITHUB: https://github.com/themefisher/
--->
-
 <html lang="en">
 <head>
 
@@ -40,6 +33,9 @@
   <link rel="stylesheet" href="plugins/slick/slick.css">
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet"> -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 </head>
 <body id="body">
@@ -81,24 +77,8 @@ Fixed Navigation
 
       <div class="collapse navbar-collapse" id="navigation">
         <ul class="navbar-nav ml-auto text-center">
-          <li class="nav-item dropdown active">
-            <a class="nav-link dropdown-toggle" href="#!" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Homepage <i class="tf-ion-chevron-down"></i>
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="index.html">Homepage</a></li>
-              <li><a class="dropdown-item" href="onepage-slider.html">Onepage</a></li>
-              <li><a class="dropdown-item" href="onepage-text.html">Onepage 2</a></li>
-									
-              <li class="dropdown dropdown-submenu dropright">
-                <a class="dropdown-item dropdown-toggle" href="#!" id="dropdown0501" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sub Menu  <i class="tf-ion-chevron-down"></i></a>
-      
-                <ul class="dropdown-menu" aria-labelledby="dropdown0501">
-                  <li><a class="dropdown-item" href="index.html">Submenu 01</a></li>
-                  <li><a class="dropdown-item" href="index.html">Submenu 02</a></li>
-                </ul>
-              </li>
-            </ul>
+          <li class="nav-item ">
+            <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item ">
             <a class="nav-link" href="about.html">About Us</a>
@@ -113,34 +93,14 @@ Fixed Navigation
             <a class="nav-link" href="team.html">Team</a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="pricing.html">Products</a>
+            <a class="nav-link" href="projects.html">Products</a>
           </li>
           <li class="nav-item ">
             <a class="nav-link" href="contact.html">Contact</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#!" id="navbarDropdown02" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Pages <i class="tf-ion-chevron-down"></i>
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown02">
-              <li><a class="dropdown-item" href="404.html">404 Page</a></li>
-              <li><a class="dropdown-item" href="blog.html">Blog Page</a></li>
-              <li><a class="dropdown-item" href="single-post.html">Blog Single Page</a></li>
-									
-              <li class="dropdown dropdown-submenu dropleft">
-                <a class="dropdown-item dropdown-toggle" href="#!" id="dropdown0201" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sub Menu  <i class="tf-ion-chevron-down"></i></a>
-      
-                <ul class="dropdown-menu" aria-labelledby="dropdown0201">
-                  <li><a class="dropdown-item" href="index.html">Submenu 01</a></li>
-                  <li><a class="dropdown-item" href="index.html">Submenu 02</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
         </ul>
       </div>
-    </nav>	
+    </nav>
     <!-- /main nav -->
   </div>
 </header>
@@ -165,168 +125,234 @@ End Fixed Navigation
 <!-- Start Portfolio Section
 		=========================================== -->
 
+<!-- Clients Portfolio Section -->
 <section class="portfolio section-sm" id="portfolio">
 	<div class="container-fluid">
-		<div class="row justify-content-center">
-			<div class="col-xl-6 col-lg-8">
-				<!-- section title -->
-				<div class="title text-center">
-					<h2>Our Clients</h2>
-					<p>We are proud to have collaborated with a diverse range of clients across industries. Their trust drives our passion for delivering reliable and innovative digital solutions. </p>
-					<div class="border"></div>
-				</div>
-				<!-- /section title -->
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-lg-12">
-
-				<div class="portfolio-filter">
-					<button type="button" data-filter="all">All</button>
-					<button type="button" data-filter="photography">Full Stack Web Development</button>
-					<button type="button" data-filter="ios">App Development</button>
-					<button type="button" data-filter="development">Cybersecurity</button>
-					<button type="button" data-filter="design">Design</button>
-				</div>
-				<div class="container">
-    <h2 class="text-center mb-5">Our Clients</h2>
     <div class="row justify-content-center">
+      <div class="col-xl-6 col-lg-8">
+        <div class="title text-center">
+          <h2>Our Clients</h2>
+          <p>We are proud to have collaborated with a diverse range of clients across industries. Their trust drives our passion for delivering reliable and innovative digital solutions.</p>
+          <div class="border"></div>
+        </div>
+      </div>
+    </div>
 
-      <!-- Example Client Card -->
-      
-      <!-- Add more client blocks below -->
-      <!-- Just change the image src and company name -->
-      
+    <div class="row portfolio-filter justify-content-center">
+      <button type="button" data-filter="all" class="active">All</button>
+      <button type="button" data-filter="photography">Full Stack Web Development</button>
+      <button type="button" data-filter="ios">App Development</button>
+      <button type="button" data-filter="development">Cybersecurity</button>
+      <button type="button" data-filter="design">Design</button>
+    </div>
+  <div class="container px-4">
+    <div class="row g-4 justify-content-center">
+		<style>
+			.portfolio-block h4 {
+				font-size: 25px; 
+				padding: 20px 20px; /* 10px top & bottom, 20px left & right */
+				font-weight: 600;
+				color: #222;
+			}
+		</style>
+
+      <!-- Client 1 -->
+      <div class="col-md-4 col-sm-6 col-xs-12 filtr-item" data-category="mix, design">
+        <div class="portfolio-block">
+          <div class="img-container">
+            <a href="images/clients/Arista.jpg" data-lightbox="clients" data-title="Arista">
+              <img class="img-fluid zoom-hover" src="images/clients/Arista.jpg" alt="Arista">
+            </a>
+            <a href="https://www.arista.com/en/" target="_blank" class="hover-icon">
+              <i class="tf-ion-ios-search-strong"></i>
+            </a>
+          </div>
+          <h4>ARISTA</h4>
+          <!-- <p>ARISTA</p> -->
+        </div>
+      </div>
+
+      <!-- Client 2 -->
+      <div class="col-md-4 col-sm-6 col-xs-12 filtr-item" data-category="mix, ios">
+        <div class="portfolio-block">
+          <div class="img-container">
+            <a href="images/clients/arm.jpg" data-lightbox="clients" data-title="ARM">
+              <img class="img-fluid zoom-hover" src="images/clients/arm.jpg" alt="ARM">
+            </a>
+            <a href="https://www.arm.com/" target="_blank" class="hover-icon">
+              <i class="tf-ion-ios-search-strong"></i>
+            </a>
+          </div>
+          <h4>ARM</h4>
+          <!-- <p>LARM</p> -->
+        </div>
+      </div>
+
+      <!-- Client 3 -->
+      <div class="col-md-4 col-sm-6 col-xs-12 filtr-item" data-category="mix, development">
+        <div class="portfolio-block">
+          <div class="img-container">
+            <a href="images/clients/ATMECS_logo.jpg" data-lightbox="clients" data-title="ATMECS">
+              <img class="img-fluid zoom-hover" src="images/clients/ATMECS_logo.jpg" alt="ATMECS">
+            </a>
+            <a href="https://atmecs.com/" target="_blank" class="hover-icon">
+              <i class="tf-ion-ios-search-strong"></i>
+            </a>
+          </div>
+          <h4>ATMECS</h4>
+          <!-- <p>ATMECS</p> -->
+        </div>
+      </div>
+
+      <!-- Client 4 -->
+      <div class="col-md-4 col-sm-6 col-xs-12 filtr-item" data-category="mix, ios">
+        <div class="portfolio-block">
+          <div class="img-container">
+            <a href="images/clients/kanck.jpg" data-lightbox="clients" data-title="Knack">
+              <img class="img-fluid zoom-hover" src="images/clients/kanck.jpg" alt="Knack Systems">
+            </a>
+            <a href="https://www.knacksystems.com/" target="_blank" class="hover-icon">
+              <i class="tf-ion-ios-search-strong"></i>
+            </a>
+          </div>
+          <h4>KNACK SYSTEMS</h4>
+          <!-- <p>KNACK SYSTEMS</p> -->
+        </div>
+      </div>
+
+      <!-- Client 5 -->
+      <div class="col-md-4 col-sm-6 col-xs-12 filtr-item" data-category="mix, design">
+        <div class="portfolio-block">
+          <div class="img-container">
+            <a href="images/clients/cloud.jpg" data-lightbox="clients" data-title="Cloud Alp">
+              <img class="img-fluid zoom-hover" src="images/clients/cloud.jpg" alt="Cloud Alp">
+            </a>
+            <a href="https://cloudalp.com/" target="_blank" class="hover-icon">
+              <i class="tf-ion-ios-search-strong"></i>
+            </a>
+          </div>
+          <h4>CLOUD ALP</h4>
+          <!-- <p>CLOUD ALP</p> -->
+        </div>
+      </div>
+
+      <!-- Client 6 -->
+
+      <!-- Client 7 -->
+      <div class="col-md-4 col-sm-6 col-xs-12 filtr-item" data-category="mix, photography">
+        <div class="portfolio-block">
+          <div class="img-container">
+            <a href="images/clients/crowe.webp" data-lightbox="clients" data-title="Crowe">
+              <img class="img-fluid zoom-hover" src="images/clients/crowe.webp" alt="Crowe">
+            </a>
+            <a href="https://www.crowe.com/" target="_blank" class="hover-icon">
+              <i class="tf-ion-ios-search-strong"></i>
+            </a>
+          </div>
+          <h4>CROWE</h4>
+          <!-- <p>CROWE</p> -->
+        </div>
+      </div>
+
+      <!-- Client 8 -->
+      <div class="col-md-4 col-sm-6 col-xs-12 filtr-item" data-category="mix, design">
+        <div class="portfolio-block">
+          <div class="img-container">
+            <a href="images/clients/gentronics.jpg" data-lightbox="clients" data-title="Gentronics">
+              <img class="img-fluid zoom-hover" src="images/clients/gentronics.jpg" alt="Gentronics">
+            </a>
+            <a href="https://gentronicssolutions.com/" target="_blank" class="hover-icon">
+              <i class="tf-ion-ios-search-strong"></i>
+            </a>
+          </div>
+          <h4>GENTRONICS</h4>
+          <!-- <p>GENTRONICS</p> -->
+        </div>
+      </div>
+
+      <!-- Client 9 -->
+      <div class="col-md-4 col-sm-6 col-xs-12 filtr-item" data-category="mix, design">
+        <div class="portfolio-block">
+          <div class="img-container">
+            <a href="images/clients/cipla.avif" data-lightbox="clients" data-title="Client 9">
+              <img class="img-fluid zoom-hover" src="images/clients/cipla.avif" alt="Client 9">
+            </a>
+            <a href="https://www.cipla.com/" target="_blank" class="hover-icon">
+              <i class="tf-ion-ios-search-strong"></i>
+            </a>
+          </div>
+          <h4>CIPLA</h4>
+          <!-- <p>CLIENT 9</p> -->
+        </div>
+      </div>
+
+      <!-- Client 10 -->
+      <div class="col-md-4 col-sm-6 col-xs-12 filtr-item" data-category="mix, ios">
+        <div class="portfolio-block">
+          <div class="img-container">
+            <a href="images/clients/xebia.png" data-lightbox="clients" data-title="Client 10">
+              <img class="img-fluid zoom-hover" src="images/clients/xebia.png" alt="Client 10">
+            </a>
+            <a href="https://xebia.com/" target="_blank" class="hover-icon">
+              <i class="tf-ion-ios-search-strong"></i>
+            </a>
+          </div>
+          <h4>XEBIA</h4>
+          <!-- <p>CLIENT 10</p> -->
+        </div>
+      </div>
+
+      <!-- Client 11 -->
+      <div class="col-md-4 col-sm-6 col-xs-12 filtr-item" data-category="mix, photography">
+        <div class="portfolio-block">
+          <div class="img-container">
+            <a href="images/clients/zazz.avif" data-lightbox="clients" data-title="Client 11">
+              <img class="img-fluid zoom-hover" src="images/clients/zazz.avif" alt="Client 11">
+            </a>
+            <a href="https://www.zazz.io/" target="_blank" class="hover-icon">
+              <i class="tf-ion-ios-search-strong"></i>
+            </a>
+          </div>
+          <h4>ZAZZ</h4>
+          <!-- <p>CLIENT 11</p> -->
+        </div>
+      </div>
+	  <div class="col-md-4 col-sm-6 col-xs-12 filtr-item" data-category="mix, photography">
+        <div class="portfolio-block">
+          <div class="img-container">
+            <a href="images/clients/protiviti.jpg" data-lightbox="clients" data-title="Client 11">
+              <img class="img-fluid zoom-hover" src="images/clients/protiviti.jpg" alt="Client 11">
+            </a>
+            <a href="https://www.protiviti.com/in-en" target="_blank" class="hover-icon">
+              <i class="tf-ion-ios-search-strong"></i>
+            </a>
+          </div>
+          <h4>protiviti</h4>
+          <!-- <p>CLIENT 11</p> -->
+        </div>
+      </div>
+
+      <!-- Client 12 -->
+      <div class="col-md-4 col-sm-6 col-xs-12 filtr-item" data-category="mix, development">
+        <div class="portfolio-block">
+          <div class="img-container">
+            <a href="images/clients/teva2.jpg" data-lightbox="clients" data-title="Client 12">
+              <img class="img-fluid zoom-hover" src="images/clients/teva2.jpg" alt="Client 12">
+            </a>
+            <a href="https://www.tevapharm.com/" target="_blank" class="hover-icon">
+              <i class="tf-ion-ios-search-strong"></i>
+            </a>
+          </div>
+          <h4>TEVA</h4>
+          <!-- <p>CLIENT 12</p> -->
+        </div>
+      </div>
+
     </div>
   </div>
-				<div class="row">
-					<div class="col-12">
-						<div class="filtr-container">
-							<div class="col-md-3 col-sm-6 col-xs-6 filtr-item" data-category="mix, design">
-                <div class="portfolio-block">
-                  <div class="img-container">
-                    <!-- Image opens in lightbox -->
-                    <a href="images/clients/Arista.jpg" data-lightbox="image-1">
-                      <img class="img-fluid" src="images/clients/Arista.jpg" alt="Arista">
-                    </a>
-                  </div>
-                  <div class="caption">
-                    <!-- Search icon goes to Google -->
-                    <a class="search-icon" href="https://www.google.com" target="_blank">
-                      <i class="tf-ion-ios-search-strong"></i>
-                    </a>
-                    <h4><a href="portfolio.html">Arista</a></h4>
-                  </div>
-                  <p>ARISTA</p>
-                </div>
-              </div>
+</section>
 
-							<div class="col-md-3 col-sm-6 col-xs-6 filtr-item " data-category="mix, design, ios">
-								<div class="portfolio-block">
-									<div class="img-container">
-										<img class="img-fluid" src="images/clients/arm.jpg" alt="">
-									</div>
-									<div class="caption">
-										<a class="search-icon" href="images/clients/arm.jpg" data-lightbox="image-1">
-											<i class="tf-ion-ios-search-strong"></i>
-										</a>
-										<h4><a href="portfolio.html">AirBnB Postcard</a></h4>
-									</div>
-									<p>LARM</p>
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6 col-xs-6 filtr-item " data-category="mix, photography, development">
-								<div class="portfolio-block">
-									<div class="img-container">
-										<img class="img-fluid" src="images/clients/ATMECS_logo.jpg" alt="">
-									</div>
-									<div class="caption">
-										<a class="search-icon" href="images/clients/ATMECS_logo.jpg" data-lightbox="image-1">
-											<i class="tf-ion-ios-search-strong"></i>
-										</a>
-										<h4><a href="portfolio.html">AirBnB Postcard</a></h4>
-									</div>
-									<p>ATMECS</p>
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6 col-xs-6 filtr-item " data-category="mix, photography, ios">
-								<div class="portfolio-block">
-									<div class="img-container">
-										<img class="img-fluid" src="images/clients/kanck.jpg" alt="">
-									</div>
-									<div class="caption">
-										<a class="search-icon" href="images/clients/kanck.jpg" data-lightbox="image-1">
-											<i class="tf-ion-ios-search-strong"></i>
-										</a>
-										<h4><a href="portfolio.html">AirBnB Postcard</a></h4>
-									</div>
-									<p>KNACK SYSTEMS</p>
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6 col-xs-6 filtr-item " data-category="mix, design">
-								<div class="portfolio-block">
-									<div class="img-container">
-										<img class="img-fluid" src="images/clients/cloud.jpg" alt="">
-									</div>
-									<div class="caption">
-										<a class="search-icon" href="images/clients/cloud.jpg" data-lightbox="image-1">
-											<i class="tf-ion-ios-search-strong"></i>
-										</a>
-										<h4><a href="portfolio.html">AirBnB Postcard</a></h4>
-									</div>
-									<p>CLOUD ALP</p>
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6 col-xs-6 filtr-item " data-category="mix, design, development">
-								<div class="portfolio-block">
-									<div class="img-container">
-										<img class="img-fluid" src="images/clients/crove_logo.jpg" alt="">
-									</div>
-									<div class="caption">
-										<a class="search-icon" href="images/clients/crove_logo.jpg" data-lightbox="image-1">
-											<i class="tf-ion-ios-search-strong"></i>
-										</a>
-										<h4><a href="portfolio.html">AirBnB Postcard</a></h4>
-									</div>
-									<p>CROWE</p>
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6 col-xs-6 filtr-item " data-category="mix, photography">
-								<div class="portfolio-block">
-									<div class="img-container">
-										<img class="img-fluid" src="images/clients/crowe.webp" alt="">
-									</div>
-									<div class="caption">
-										<a class="search-icon" href="images/clients/crowe.webp" data-lightbox="image-1">
-											<i class="tf-ion-ios-search-strong"></i>
-										</a>
-										<h4><a href="portfolio.html">AirBnB Postcard</a></h4>
-									</div>
-									<p>CROWE</p>
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6 col-xs-6 filtr-item " data-category="mix, design, development">
-								<div class="portfolio-block">
-									<div class="img-container">
-										<img class="img-fluid" src="images/clients/gentronics.jpg" alt="">
-									</div>
-									<div class="caption">
-										<a class="search-icon" href="images/clients/gentronics.jpg" data-lightbox="image-1">
-											<i class="tf-ion-ios-search-strong"></i>
-										</a>
-										<h4><a href="portfolio.html">AirBnB Postcard</a></h4>
-									</div>
-									<p>GENTRONICS</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div> <!-- /end col-lg-12 -->
-		</div> <!-- end row -->
-	</div> <!-- end container -->
-</section> <!-- End section -->
+
 <!-- Start Testimonial
 =========================================== -->
 		
@@ -488,7 +514,57 @@ End Fixed Navigation
 <script src="plugins/google-map/gmap.js"></script>
 
 <!-- Custom js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const buttons = document.querySelectorAll(".portfolio-filter button");
+  const items = document.querySelectorAll(".filtr-item");
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      buttons.forEach((btn) => btn.classList.remove("active"));
+      button.classList.add("active");
+
+      const filterValue = button.getAttribute("data-filter");
+
+      items.forEach((item) => {
+        const categories = item.getAttribute("data-category")
+          .split(",")
+          .map((c) => c.trim());
+
+        const match = filterValue === "all" || categories.includes(filterValue);
+
+        if (match) {
+          item.classList.remove("hidden");
+          requestAnimationFrame(() => {
+            item.style.transform = "scale(1)";
+            item.style.opacity = "1";
+            item.style.position = "relative";
+            item.style.pointerEvents = "auto";
+          });
+        } else {
+          item.style.transform = "scale(0.9)";
+          item.style.opacity = "0";
+          item.style.pointerEvents = "none";
+          setTimeout(() => {
+            item.classList.add("hidden");
+            item.style.position = "absolute";
+          }, 400); // should match your CSS transition duration
+        }
+      });
+    });
+  });
+});
+</script>
+
+<script>
+	lightbox.option({
+		'resizeDuration': 200,
+		'wrapAround': true
+	});
+</script>
 <script src="js/script.js"></script>
+
 
 </body>
 
